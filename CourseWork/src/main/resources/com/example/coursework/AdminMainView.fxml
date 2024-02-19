@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="512.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminMainPageController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="512.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Аккаунт">
+            <items>
+                  <Menu mnemonicParsing="false" text="Изменить">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#OnChangeLoginButtonClick" text="Логин" />
+                        <MenuItem mnemonicParsing="false" onAction="#OnChangePasswordButtonClick" text="Пароль" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#OnDeleteAccountButtonClick" text="Удалить аккаунт" />
+              <MenuItem mnemonicParsing="false" onAction="#OnExitButtonClick" text="Выйти" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="31.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnAllAccountsButtonClick" prefHeight="40.0" prefWidth="168.0" text="Все учётные записи и данные">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="134.0" mnemonicParsing="false" onAction="#OnAddAdminButtonClick" prefHeight="40.0" prefWidth="168.0" text="Добавить администратора" />
+      <Separator layoutX="226.0" layoutY="26.0" orientation="VERTICAL" prefHeight="487.0" prefWidth="17.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="35.0" prefHeight="72.0" prefWidth="230.0" text="Работа с учётными записями">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="35.0" prefHeight="72.0" prefWidth="230.0" text="Работа со складами">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="293.0" layoutY="134.0" mnemonicParsing="false" onAction="#OnWatchWarehousesButtonClick" prefHeight="40.0" prefWidth="168.0" text="Склады" />
+   </children>
+</AnchorPane>
